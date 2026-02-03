@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREES - Luxury Real Estate Media Agency</title>
+    <meta name="description" content="Cinematic video production for the world's finest properties. Elevate your luxury listings with PREES.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fafafa;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #f43f5e, #f97316, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-brand-gradient {
+            background: linear-gradient(to right, #f43f5e, #f97316, #fbbf24);
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .animate-marquee {
+            display: flex;
+            width: fit-content;
+            animation: marquee 40s linear infinite;
+        }
+        
+        .animate-marquee-fast {
+            display: flex;
+            width: fit-content;
+            animation: marquee 30s linear infinite;
+        }
+
+        .marquee-container:hover .animate-marquee,
+        .marquee-container:hover .animate-marquee-fast {
+            animation-play-state: paused;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="text-slate-900 overflow-x-hidden selection:bg-rose-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
