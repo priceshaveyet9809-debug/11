@@ -22,7 +22,7 @@ const VideoModal = ({ videoId, isOpen, onClose }: { videoId: string | undefined,
         <iframe 
           width="100%" 
           height="100%" 
-          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`} 
+          src={`https://www.youtube.com/embed/KFNfQwmLnS8?si=0N4nmXTPdrp3d9xb`} 
           title="YouTube video player" 
           frameBorder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
