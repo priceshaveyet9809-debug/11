@@ -1,7 +1,74 @@
+import { VideoItem, PackageItem, ChannelItem } from './types';
 
 import { Camera, Map, Layers, Film, Award, Star } from 'lucide-react';
 import { Service, Testimonial } from './types';
 
+
+export const LOGO_GRADIENT = "from-[#FF3366] via-[#FF6633] to-[#FF9933]";
+
+export const LONG_FORM_VIDEOS: VideoItem[] = [
+  { id: 'l1', title: 'Modern Villa Tour', youtubeId: 'cu17V4nZK-c', type: 'long' },
+  { id: 'l2', title: 'Luxury Penthouse Showcase', youtubeId: '9W9qQInmFmI', type: 'long' },
+  { id: 'l3', title: 'Waterfront Estate Edit', youtubeId: 'm4L62Vn5fE4', type: 'long' },
+  { id: 'l4', title: 'Mountain Retreat Cinematic', youtubeId: 'jVnB87O-k5Y', type: 'long' },
+];
+
+export const SHORT_FORM_VIDEOS: VideoItem[] = [
+  { id: 's1', title: 'Kitchen Luxury', youtubeId: 'K7H_4IqU-XQ', type: 'short' },
+  { id: 's2', title: 'Poolside Vibes', youtubeId: 'XoK7mX9eF_s', type: 'short' },
+  { id: 's3', title: 'Master Suite Edit', youtubeId: 'L-R4M4q-6O0', type: 'short' },
+  { id: 's4', title: 'Garden Walkthrough', youtubeId: 'Yv6k5Mh9Q0w', type: 'short' },
+  { id: 's5', title: 'Entrance Impact', youtubeId: 'N9y9m-F7Q6k', type: 'short' },
+];
+
+export const PACKAGES: PackageItem[] = [
+  {
+    id: 'p1',
+    name: 'Standard',
+    price: 'Contact Us',
+    description: 'Perfect for quick listings and high-volume agents.',
+    features: ['1-2 Minute Edit', 'Basic Color Grading', 'Royalty-Free Music', '48h Turnaround'],
+    youtubeId: 'cu17V4nZK-c',
+    gradient: 'from-blue-500 to-indigo-600'
+  },
+  {
+    id: 'p2',
+    name: 'Advance',
+    price: 'Popular',
+    description: 'The ultimate showcase for premium property listings.',
+    features: ['3-5 Minute Edit', 'Advanced Color Grading', 'Sound Design', 'Revisions Included', 'Social Media Cuts'],
+    youtubeId: '9W9qQInmFmI',
+    gradient: 'from-orange-500 to-red-600'
+  },
+  {
+    id: 'p3',
+    name: 'High End',
+    price: 'Custom',
+    description: 'Bespoke cinematic storytelling for the world\'s most elite estates.',
+    features: ['Unlimited Length', 'Premium Cinematic Grading', 'Sound Mastering', 'Drone Footage Integration', 'Custom Graphics'],
+    youtubeId: 'm4L62Vn5fE4',
+    gradient: 'from-purple-600 to-pink-600'
+  }
+];
+
+export const CHANNELS: ChannelItem[] = [
+  {
+    id: 'c1',
+    name: 'PREES Luxury Reel',
+    description: 'Our main hub for premium long-form real estate walkthroughs.',
+    link: 'https://youtube.com',
+    icon: 'fa-youtube',
+    stats: '50K+ Subscribers'
+  },
+  {
+    id: 'c2',
+    name: 'PREES Shorts',
+    description: 'Focusing on vertical content and quick property highlights.',
+    link: 'https://tiktok.com',
+    icon: 'fa-tiktok',
+    stats: '1M+ Monthly Views'
+  }
+];
 export const SERVICES: Service[] = [
   {
     id: '1',
@@ -45,3 +112,4 @@ export const TESTIMONIALS: Testimonial[] = [
     avatar: 'https://picsum.photos/100/100?random=12'
   }
 ];
+
